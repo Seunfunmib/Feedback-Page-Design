@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Overpass:wght@200;500&family=Sacramento&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color:  hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+main {
+  height: 100vh;
+  background-color: hsla(216, 12%, 54%, 0.059);
+  display: grid;
+  place-content: center;
+  width:80%;
+  margin:auto;
+}
+.container {
+  height: 50vh;
+  max-width: 50%;
+  margin: 0 auto;
+  background-color: hsla(213, 20%, 18%, 0.475);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+.star-container{
+  margin: 1rem 1.5rem;
+  height:2.2rem;
+  width:2.2rem;
+  border-radius: 50%;
+  background-color:hsla(216, 12%, 54%, 0.112);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-content-container{
+  width:90%;
+  margin: 0 auto;
+}
+.rating-content-container > h1{
+  color:rgba(255, 255, 255, 0.842);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.rating-content-container > div{
+  color:hsla(217, 12%, 63%, 0.484);
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  display:flex;
+  flex-direction: flex-end;
+}
+.rating-content-container > div{
+  display:flex;
+  justify-content: space-around;
+}
+.rating-content-container > div >button:nth-child(-n +5){
+  background-color:hsla(216, 12%, 54%, 0.112);
+  color:hsla(217, 12%, 63%, 0.484);
+  font-family: 'Overpass', sans-serif;
+  height:2.5rem;
+  width:2.5rem;
+  border-radius: 50%;
+  border:none;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.rating-content-container > div >button:nth-child(-n +5):hover{
+  background-color:hsl(25, 97%, 53%);
+  color:white;
+  cursor: pointer;
+}
+
+.rating-content-container > button{
+  background-color: hsl(25, 97%, 53%);
+  color:white;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 0.1rem;
+  width:95%;
+  height:2.3rem;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  border: none;
+}
+.rating-content-container > button:hover{
+  background-color: white;
+  color:hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+@media (max-width:920px){
+.container{
+  height:55vh;
+  width:100vw;
+}
+
+.rating-content-container > div >button:nth-child(-n +5){
+  height:1rem;
+  width:1rem;
+  border-radius: 50%;
+  padding-bottom: 0.1rem;
+}
+}
+@media (max-width:370px){
+  .rating-content-container >h1{
+    font-size: 1rem;
+  }
+  .rating-content-container > div{
+    padding-bottom: 1rem;
+    
+    
+  }
+  .rating-content-container > button{
+    width:5rem;
+    height:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+
+
+}
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
